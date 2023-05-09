@@ -1,0 +1,139 @@
+main{
+    header{
+        height: 150px;
+        // border: 1px solid red;
+        // background-color: red;
+        .top .call i{
+            color: green;
+            font-size: 20px;
+        }
+        .top .call span{
+            padding-left: 10px;
+
+        }
+        .top .call a{
+            text-decoration: none;
+            color: black;
+            transition: .4s;
+        }
+        .top .call a:hover{
+            color: green;
+        }
+        .top{
+            .cat{
+                // height: 40px;
+            }
+            .cat .dropdown{
+                // height: 100%;
+                outline: 0;
+            }
+            .cat input{
+                height: 100%;
+
+                // background-color: red;
+                >button{
+                    display: flex;
+                    height: 40px;
+                    // border: 1px solid gray;
+                }
+                &::placeholder{
+                    color: black;
+                }
+            }
+        }
+        .bottom .menu>ul>li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: black;
+
+            }
+        }
+    }
+    .slider{
+        position: relative;
+        height: 440px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        &::after{
+            content: '';
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;left: 0;
+            background-color: rgba(242, 231, 231, 0.543);
+        }
+        img{
+            min-height: 500px;
+            //  object-position: 20% 20%;
+            display: flex;
+            object-fit: none;
+        //    opacity: .8;
+        object-position: 60% 10%;
+
+        }
+        @keyframes fadeIn {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+            
+        }
+        .img-overlay{
+            text-transform: capitalize;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            margin-top: 70px;
+            margin-left: 30px;
+            position: absolute;
+            z-index: 99;
+        animation: fadeIn 5s;
+
+            >h4{
+                font-size: 20px;
+                font-weight: 500px;
+                line-height: 1.2rem;
+            }
+            >h2{
+                font-size: 2.3rem;
+                margin-bottom: 20px;
+            }
+           .row{
+            >div{
+                width: 150px;
+                height: 60px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                color: white;
+                &:hover{
+                    background-color: green;
+                }
+               
+            }
+            >div:nth-of-type(1){
+                background-color: #699605
+                ;
+                margin-right: 30px;
+                &:hover{
+                    background-color: green;
+                }
+            }
+            >div:nth-of-type(2){
+                background-color: white
+                ;
+                color: black;
+                &:hover{
+                    background-color: green;
+                    color: white;
+                }
+            }
+           
+           }
+
+        }
+    }
+
+}

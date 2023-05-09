@@ -1,0 +1,16 @@
+main{
+ height: 100vh;
+}
+@media screen and (max-width:320px) {
+    main .bottom .logo{
+        display: none;
+    }
+}
+@media screen and (max-width:425px) {
+    main .bottom .logo{
+        display: flex;
+    }
+    main .bottom .ppl{
+        display: none;
+    }
+}

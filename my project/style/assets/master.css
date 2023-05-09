@@ -1,0 +1,131 @@
+main header {
+  height: 150px;
+}
+main header .top .call i {
+  color: green;
+  font-size: 20px;
+}
+main header .top .call span {
+  padding-left: 10px;
+}
+main header .top .call a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+main header .top .call a:hover {
+  color: green;
+}
+main header .top .cat .dropdown {
+  outline: 0;
+}
+main header .top .cat input {
+  height: 100%;
+}
+main header .top .cat input > button {
+  display: flex;
+  height: 40px;
+}
+main header .top .cat input::-moz-placeholder {
+  color: black;
+}
+main header .top .cat input:-ms-input-placeholder {
+  color: black;
+}
+main header .top .cat input::placeholder {
+  color: black;
+}
+main header .bottom .menu > ul > li {
+  list-style-type: none;
+}
+main header .bottom .menu > ul > li a {
+  text-decoration: none;
+  color: black;
+}
+main .slider {
+  position: relative;
+  height: 440px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
+}
+main .slider::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(242, 231, 231, 0.543);
+}
+main .slider img {
+  min-height: 500px;
+  display: flex;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: 60% 10%;
+     object-position: 60% 10%;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .slider .img-overlay {
+  text-transform: capitalize;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 70px;
+  margin-left: 30px;
+  position: absolute;
+  z-index: 99;
+  -webkit-animation: fadeIn 5s;
+          animation: fadeIn 5s;
+}
+main .slider .img-overlay > h4 {
+  font-size: 20px;
+  font-weight: 500px;
+  line-height: 1.2rem;
+}
+main .slider .img-overlay > h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+main .slider .img-overlay .row > div {
+  width: 150px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+main .slider .img-overlay .row > div:hover {
+  background-color: green;
+}
+main .slider .img-overlay .row > div:nth-of-type(1) {
+  background-color: #699605;
+  margin-right: 30px;
+}
+main .slider .img-overlay .row > div:nth-of-type(1):hover {
+  background-color: green;
+}
+main .slider .img-overlay .row > div:nth-of-type(2) {
+  background-color: white;
+  color: black;
+}
+main .slider .img-overlay .row > div:nth-of-type(2):hover {
+  background-color: green;
+  color: white;
+}/*# sourceMappingURL=master.css.map */
